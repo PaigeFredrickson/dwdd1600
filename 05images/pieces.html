@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Paige Fredrickson">
+    <meta name="description" content="A portfolio of fashion pieces and sustainable designs.">
+    <title>WhoIsPaigeAnyway - Pieces</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="fashion.css">
+
+    <style>
+        /* Gallery layout inspired by dishes.html but styled for fashion */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 40px 0;
+        }
+
+        .gallery figure {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid #ddd; /* Subtle fashion-forward divider */
+            padding-bottom: 15px;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 350px; /* Taller aspect ratio for fashion portraits */
+            background-color: #f2f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Oxygen', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.15rem;
+            color: #999;
+            transition: background-color 0.3s ease;
+        }
+
+        .image-placeholder:hover {
+            background-color: #e8e8e8;
+        }
+
+        figcaption {
+            padding-top: 15px;
+            font-family: 'Roboto Flex', sans-serif;
+            font-weight: 400;
+            font-size: 0.95rem;
+            text-align: left;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><span>WhoIsPaigeAnyway</span></h1>
+    </header>
+
+    <nav>
+        <ul>
+           <li><a href="./index.html">Home</a></li>
+            <li><a href="runway.html">Runway</a></li>
+            <li class="active"><a href="pieces.html">Pieces</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Pieces</h1>
+        <p>An archive of hand-crafted, sustainable garments and design experiments.</p>
+
+        <div class="gallery">
+            <figure>
+                <div class="image-placeholder">image</div>
+                <figcaption>01 / Structured Hemp Blazer</figcaption>
+            </figure>
+
+            <figure>
+                <div class="image-placeholder">image</div>
+                <figcaption>02 / Reclaimed Silk Slip</figcaption>
+            </figure>
+
+            <figure>
+                <div class="image-placeholder">image</div>
+                <figcaption>03 / Zero-Waste Utility Pant</figcaption>
+            </figure>
+
+            <figure>
+                <div class="image-placeholder">image</div>
+                <figcaption>04 / Organic Cotton Bodysuit</figcaption>
+            </figure>
+
+            <figure>
+                <div class="image-placeholder">image</div>
+                <figcaption>05 / Upcycled Denim Corset</figcaption>
+            </figure>
+
+            <figure>
+                <div class="image-placeholder">image</div>
+                <figcaption>06 / Plant-Leather Accessory</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Paige Fredrickson &bull; All Rights Reserved</p>
+    </footer>
+</body>
+</html>
