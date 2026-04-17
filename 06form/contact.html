@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Get in touch with Paige Fredrickson for collaborations and inquiries."/>
+    <title>WhoIsPaigeAnyway - Contact Us</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="fashion.css">
+    <style>
+        .myform fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+        .myform label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .myform input[type="text"], 
+        .myform input[type="email"], 
+        .myform select, 
+        .myform textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        .myform textarea {
+            height: 120px;
+        }
+        footer {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span>WhoIsPaigeAnyway</span>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="runway.html">Runway</a></li>
+            <li><a href="pieces.html">Pieces</a></li>
+            <li class="active"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h1>Connect with Me</h1>
+        <p>Interested in sustainable fashion or looking to collaborate on a future project? Please fill out the form below.</p>
+
+       <form method="get" action="thanks.html" class="myform">
+
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label> Full Name: <input type="text" name="fullname" required> </label> <label> Email Address: <input type="email" name="email" required> </label> </fieldset>
+
+    <fieldset>
+        <legend>Reason for Inquiry</legend>
+        <label><input type="radio" value="learn" name="reason" required> Learn more about my design process</label> 
+        <label><input type="radio" value="collaborate" name="reason"> Partnership/Collaboration Inquiry</label>
+        <label><input type="radio" value="press" name="reason"> Media/Press Request</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Areas of Interest</legend>
+        <p>Select what you are most interested in:</p>
+        <label><input type="checkbox" name="interest" value="sustainable"> Sustainable Materials</label>
+        <label><input type="checkbox" name="interest" value="upcycling"> Upcycling Techniques</label>
+        <label><input type="checkbox" name="interest" value="zero-waste"> Zero-waste Patterns</label>
+        <br>
+        <label>How did you hear about my work? 
+            <select name="discovery">
+                <option value="">Please Select</option>
+                <option value="social">Social Media</option>
+                <option value="runway">Runway Show</option>
+                <option value="referral">Word of Mouth</option>
+            </select>
+        </label>
+    </fieldset>
+
+    <label>Message:
+        <textarea name="message" placeholder="Tell me more about your project or questions..."></textarea>
+    </label>
+
+    <input type="submit" value="Send Inquiry" style="background-color: rgb(219, 77, 153); color: #ffd1df; border: 2px solid #3d2920; border-radius: 8px; padding: 10px 20px; font-weight: 700; cursor: pointer;">
+</form>
+    </main>
+   <footer>
+        <p>&copy; 2026 &bull; Paige Fredrickson &bull; All Rights Reserved</p>
+    </footer>
+    </body>
+</html>
