@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Paige Fredrickson for fashion inquiries."/>
+    <title>WhoIsPaigeAnyway - Contact Us</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="fashion.css">
+    <style>
+        /* Requirement: Style the fieldsets */
+        .myform fieldset {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 2px solid #3d2920;
+            border-radius: 8px;
+        }
+        /* Requirement: Style the legends */
+        .myform legend {
+            font-weight: 700;
+            color: #3d2920;
+            padding: 0 10px;
+            text-transform: uppercase;
+        }
+        /* Requirement: Specific styling for Text, Email, and Tel inputs */
+        .myform input[type="text"], 
+        .myform input[type="email"], 
+        .myform input[type="tel"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        /* Requirement: Style Select and Textarea */
+        .myform select, 
+        .myform textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        /* Requirement: Style the Submission Button */
+        .myform input[type="submit"] {
+            background-color: rgb(219, 77, 153);
+            color: #ffd1df;
+            border: 2px solid #3d2920;
+            border-radius: 12px;
+            padding: 15px 30px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .myform label {
+            display: block;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+        footer { clear: both; }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WhoIsPaigeAnyway</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <link rel="stylesheet" href="fashion.css">
+</head>
+<body>
+ <header>
+    <div class="container"> <div class="logo-container">
+            <img src="favicon.ico" alt="WIPA Logo" class="logo">
+            <span>WhoIsPaigeAnyway</span>
+        </div>
+    </div>
+</header>
+
+ <nav>
+        <ul>
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="runway.html">Runway</a></li>
+            <li><a href="pieces.html">Pieces</a></li>
+              <li class="active"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h1>Connect with Me</h1>
+        <form method="get" action="thanks.html" class="myform">
+            
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>Full Name: <input type="text" name="fullname" required></label>
+                <label>Email Address: <input type="email" name="email" required></label>
+                <label>Phone Number: <input type="tel" name="phone" required placeholder="123-456-7890"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Inquiry Details</legend>
+                <label><input type="radio" name="reason" value="design" required> Design Inquiry</label>
+                <label><input type="radio" name="reason" value="collab"> Collaboration</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label><input type="checkbox" name="interest" value="upcycling"> Upcycling</label>
+                <label><input type="checkbox" name="interest" value="sustainable"> Sustainable Fabrics</label>
+                <br>
+                <label>Best Time to Contact:
+                    <select name="contact_time" required>
+                        <option value="">Please Select</option>
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <label>Message: <textarea name="message" required></textarea></label>
+            <input type="submit" value="Send Inquiry">
+        </form>
+    </main>
+    <footer><p>&copy; 2026 &bull; Paige Fredrickson &bull; All Rights Reserved</p></footer>
+</body>
+</html>
