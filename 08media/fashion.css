@@ -1,0 +1,237 @@
+/* This is the start of my css. */
+
+* {
+    box-sizing: border-box;
+}
+body {
+background-color: #fd5da8;
+font-family: 'Oxygen', sans-serif;
+font-size: 16px;
+font-weight: 300;
+margin: 0;
+}
+/* This is the header area. */
+
+header {
+    /* This creates a smooth transition from your light pink to a slightly darker pink */
+    background: linear-gradient(to bottom, #ffd1df, #ffb6c1); 
+    padding: 1rem 2vw; 
+}
+
+header span {
+    margin: 0;
+    color: rgb(219, 77, 153);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+/* This is the navigation area. */
+
+nav {
+background-color: #3d2920;
+}
+
+nav ul{
+list-style-type: none;
+padding: 10px 2vw;
+margin: 0;
+display: flex;
+}
+
+nav a {
+font-size: 1.2rem;
+text-decoration: none;
+color: #ffd1df;
+font-weight: 700;
+display: block;
+padding: .8rem 2rem;
+}
+
+nav li.active a {
+    background-color:rgb(219, 77, 153);
+    color: #ffd1df;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.myform input[type="submit"] {
+    background-color: rgb(219, 77, 153); 
+    color: #ffd1df;                      
+    border: 2px solid #3d2920;          
+    border-radius: 8px;                 
+    padding: 10px 20px;                 
+    font-weight: 700;                   
+    cursor: pointer;                    
+    font-family: 'Oxygen', sans-serif;  
+}
+
+.myform input[type="submit"]:hover {
+    background-color: #3d2920;
+    color: white;
+}
+
+.myform input:required:invalid, 
+.myform textarea:required:invalid {
+    background-color: #ffc5d3;
+    border: 2px solid #db4d99; 
+}
+
+.myform input:required:valid, 
+.myform textarea:required:valid {
+    background-color: #f0fff0; 
+    border: 1px solid #ccc;
+}
+
+/* Adds a subtle shadow to gallery images by default */
+.gallery img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+/* Enhances the shadow and slightly lifts the image on hover */
+.gallery img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: translateY(-5px); /* Lift effect */
+}
+
+
+/* Change height to auto to show the full photo */
+.hero {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto; /* This allows the height to scale naturally with the width */
+    display: block;
+}
+/* This only applies to screens SMALLER than 600px */
+@media only screen and (max-width: 700px) {
+    nav ul {
+        flex-direction: column; /* Stacks the menu items */
+        padding: 0;
+    }
+
+    nav a {
+        text-align: center;
+        border-bottom: 1px solid #4e3529; /* Adds a divider for mobile */
+        padding: 1rem;
+    }
+    
+}
+header .logo-container {
+    display: flex;
+    align-items: center; 
+    gap: 15px;           
+}
+
+.logo {
+    width: 60px;         
+    height: auto;      
+    border-radius: 4px;  
+}
+
+header, nav, footer {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 2vw;
+}
+
+.gallery {
+    display: flex; /* Requirement: Use flex for gallery */
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2vw;
+}
+
+body {
+    margin: 0; 
+    padding: 0;
+    background-color: #fd5da8;
+}
+
+header span {
+    margin: 0;
+    color: rgb(219, 77, 153);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+main {
+    padding: 1rem 2vw;
+}
+
+main h1 {
+    color: #ffd1df;
+}
+
+main h2 {
+    color: #3d2920;
+    margin-bottom: .2rem;
+}
+
+main p{
+    color: #333333;
+    margin: 0;
+}
+
+main ol {
+    padding: .5rem 30px;
+    background-color: rgb(219, 77, 153);
+    list-style-type: lower-alpha;
+}
+
+main dl dt{
+color: #3d2920;
+font-weight: 700;
+}
+
+main dl dd{
+    color: #ffd1df;
+    font-size: .9rem;
+    margin-left: 20px;
+}
+
+main ul {
+    list-style-type:circle;
+}
+
+main ul li{
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main address {
+    font-style:normal;
+    background-color:rgb(219, 77, 153);
+    padding: .5rem;
+    width: 12.5rem;
+    border: 2px solid #3d2920;
+    border-radius: .3rem;
+}
+
+/* This is the footer area. */
+
+footer {
+    background-color: #eaeaea;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
